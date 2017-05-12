@@ -1,0 +1,289 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initialscale=1.0">
+  <link rel="icon" href="/static/favicon.png">
+  <!-- Extra meta data or head content here -->
+  <!-- Static files mainly for development -->
+  <!--<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/bootstrap/js/bootstrap.min.js"></script>-->
+
+  <link href="/static/css/style.css" rel="stylesheet">
+  <!-- CDN STARTS HERE -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+  /* Set default padding and margin and also remove bullets from list */
+  ul.hmenu {
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        background-color: purple;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+  }
+
+/* Allows lists to flow to right instead of down */
+  li.rhmenu {
+        float: right;
+  }
+
+  li.lhmenu {
+        float: left;
+        padding-left: 20%;
+        text-shadow: 3px 2px silver; 
+        font-size:1.8em; 
+        font-family: Lobster;
+  }
+  
+/* class for this list style is selected by class="one" */
+  li a.one{
+      display: block; 
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+        background-color: #111;
+  }
+
+  .active {
+        background-color: #4CAF50;
+  }
+  
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .purple-box {
+    background-color: purple;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+ /* border-style: solid;
+    border-color: black;
+    border-width: 1px; */
+  }
+
+  .box1{
+    border-style: solid;
+    border-color: black;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+  }
+  
+  .gray-box {
+    background-color: gray;
+    color: white;
+    text-align: center;
+  }
+
+  .white-box {
+    background-color: white;
+    color: gray;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .ltgray-box {
+    background-color: rgb(220,220,220);
+    color: white;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .image1 {
+    width: 150px;
+    float: right;
+    /* margin-top, right, bottom, left */
+    margin: 0px 10px 0px 10px; 
+    border-color: teal;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .publications-image {
+    width: 400px;
+    /* float: right; */
+    /* margin-top, right, bottom, left */
+    margin: 0px 0px 0px 0px; 
+    border-color: teal;
+    border-width: 1px;
+    border-style: solid;
+    /* border-radius: 50%; */
+  }
+
+  .patents-image {
+    width: 220px;
+    /* float: right; */
+    /* margin-top, right, bottom, left */
+    margin: 0px 0px 0px 0px; 
+    border-color: teal;
+    border-width: 0px;
+    border-style: solid;
+    /* border-radius: 50%; */
+  }
+
+  .Bogle-image {
+    width: 220px;
+    padding: 0;
+    /* margin-top, right, bottom, left */
+    margin: 0px 0px 0px 0px; 
+    border-color: teal;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    border-radius: 50%; 
+  }
+
+  .linkedin-image {
+    width: 50px;
+    padding: 0px;
+    /* margin-top, right, bottom, left */
+    margin: 50px 0px 50px 0px; 
+    border-color: teal;
+    border-width: 2px;
+    border-style: solid;
+    text-align: center;
+    border-radius: 50%; 
+  }
+.col-container {
+      display: table;
+                   width: 100%;
+}
+.col {
+      display: table-cell;
+                   padding: 16px;
+}
+
+</style>
+
+</head>
+<body>
+<!-- This div is for the menu bar at the top -->
+<div>
+  <a id="about"> </a>
+  <ul class="hmenu box1"> 
+    <li class="rhmenu" style="padding-right:20%"><a class="one" href="#contact">CONTACT</a></li>
+    <li class="rhmenu"><a class="one" href="#portfolio">PORTFOLIO</a></li>
+    <li class="rhmenu"><a class="one active" href="#about">ABOUT</a></li>
+    <li class="lhmenu" > Serendipitious Designs</li>
+  </ul>
+</div>
+
+<!---------------------- This is the ABOUT block start                           ------------------->
+<div class="col-container">
+  <div class="col" style="width: 20%; background:silver">
+  </div>
+
+  <div class="col" style="width: 60%; background-color:gray">
+    <p style="font-size:1.5em; padding: 100px 10px 80px 10px; color:white; text-align:center">
+      <img class="image1" src="https://github.com/veritechy/My-Portfolio/blob/master/Sparky.jpg?raw=true" alt="A cute Yorkie">
+      After 26 years of designing integrated circuits, 
+      <br> I'm an aspiring Front-End Developer and UX/UI Designer with
+      <br>Extensive project management and technical writing experience
+      <br>
+      <br> =========================================== <br>
+      <br>
+      Web Developer - User Experience Designer - Graphic Artist
+    </p>
+  </div>
+
+  <div class="col" style="width: 20%; background:silver">
+  </div>
+</div>
+<!---------------------- This is the ABOUT block stop                            ------------------->
+<!---------------------- This is the PORTFOLIO block start                       ------------------->
+<div class="col-container">
+  <div class="col" style="width: 20%; background:silver">
+  </div>
+
+  <div class="col" style="width: 60%; background-color:white">
+    <a id="portfolio"> </a>
+    <h2 style=" padding: 50px 50px 00px 50px; text-align:center;"> <b> PORTFOLIO </b> </p> 
+    <h2 style=" padding:  0px 50px 50px 50px; text-align:center;"> <b> ______________________________ </b> </p> 
+  </div>
+
+  <div class="col" style="width: 20%; background:silver">
+  </div>
+</div>
+<!---------------------- This is the PORTFOLIO block stop                        ------------------->
+<!---------------------- This is the PORTFOLIO Jack Bogle Tribute start          ------------------->
+<div class="col-container">
+  <div class="col" style="width: 20%; background:silver"> </div>
+
+  <div class="col" style="width: 60%; background-color:white; text-align:center">
+    <img class="Bogle-image" src="http://s3.amazonaws.com/media.wbur.org/wordpress/11/files/2012/12/1212_bogle.jpg"  alt="Picture of John C. Bogle">
+    <p style="font-size:1.2em; padding: 5px 50px 80px 50px; text-align: center"> 
+      <b> A TRIBUTE TO JACK BOGLE </b> <br>
+      <a href="https://codepen.io/veritechy/full/rmwPjV" target="_blank"> Click to read more</a> </li>
+    </p>
+  </div>
+
+  <div class="col" style="width: 20%; background:silver"> </div>
+</div>
+<!---------------------- This is the PORTFOLIO Jack Bogle Tribute stop           ------------------->
+<!---------------------- This is the PORTFOLIO Publications and Patents start    ------------------->
+<div class="col-container">
+  <div class="col" style="width: 20%; background:silver"> </div>
+
+  <div class="col" style="width: 30%; background-color:white; text-align:center">
+    <a href="#"><img class="publications-image" src="https://github.com/veritechy/My-Portfolio/blob/master/publications.jpg?raw=true" alt="picture of publications"></a>
+    <ul style="text-align:left; padding: 10px 20px 80px 20px;">
+      <li> <b> PUBLICATIONS</b> </li>
+      <li> <a href="http://ieeexplore.ieee.org/document/6401536/" target="_blank"> “On-Die Instrumentation to Solve Challenges for 28 nm, 28 Gbps Timing Variability and Stressing”, International Test Conference, Nov 2012 </a> </li>
+      <li> <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.192.16" target="_blank"> “Digitally Assisted Adaptive Equalizer in 90 nm With Wide Range Support From 2.5 Gbps to 6.5 Gbps”, Designcon Apr 2007 </a> </li>
+      <li> <a href="https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/cp/cp-01066-on-die-scope.pdf" target="_blank"> “An On-Die Scope Based on 40-nm Process FPGA Transceiver”, Designcon, Feb 2010 </a> </li>
+    </ul>
+  </div>
+
+  <div class="col" style="width: 30%; background-color:white; text-align:center">
+    <a href="#"><img class="patents-image" src="https://github.com/veritechy/My-Portfolio/blob/master/patents.png?raw=true" alt="picture of patents"></a>
+    <ul style="text-align:left; padding: 10px 20px 160px 20px;">
+      <li> <b> PATENTS </b> </li>
+      <li> Over 150 patents granted. Click on link below to search the Justia patent site filtered for my contributions </li>
+      <li> <a href="http://patents.justia.com/search?q=Wilson+Wong+Altera" target="_blank"> Click for Patent Search </a> </li>
+    </ul>
+  </div>
+
+  <div class="col" style="width: 20%; background:silver"> </div>
+</div>
+<!---------------------- This is the PORTFOLIO Publications and Patents stop     ------------------->
+<!---------------------- This is the CONTACT block start                         ------------------->
+<div class="col-container" style="border-top: 5px solid silver">
+  <a id="contact"> </a>
+  <div class="col" style="width: 20%; background:silver">
+  </div>
+
+  <div class="col" style="width: 60%; background-color:white">
+    <h2 style=" padding: 50px 50px 00px 50px; text-align:center;"> <b> CONTACT ME ON LINKEDIN </b> </p> 
+    <h2 style=" padding:  0px 50px 50px 50px; text-align:center;"> <b> ______________________________ </b> </p> 
+    <a href="https://www.linkedin.com/in/wilson-wong-860ba0b/" target="_blank"><img class="linkedin-image" src="https://github.com/veritechy/My-Portfolio/blob/master/linkedin_circle_color-512.png?raw=true" alt="linkedin icon"></a>
+
+  </div>
+
+  <div class="col" style="width: 20%; background:silver">
+  </div>
+</div>
+<!---------------------- This is the CONTACT block stop                          ------------------->
+
+
+
+
+
+</body>
+</html>
